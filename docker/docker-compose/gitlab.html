@@ -140,7 +140,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h2 id="gitlab-runner"><a class="header" href="#gitlab-runner">Gitlab Runner</a></h2>
+                        <h2 id="gitlab-runner-installation"><a class="header" href="#gitlab-runner-installation">Gitlab Runner <a href="https://docs.gitlab.com/runner/install/">Installation</a></a></h2>
 <h4 id="docker-composeyml"><a class="header" href="#docker-composeyml">docker-compose.yml</a></h4>
 <pre><code class="language-yaml">version: &quot;3.3&quot;
 
@@ -169,6 +169,7 @@ volumes = [&quot;/certs/client&quot;, &quot;/cache&quot;]
 [runners.cache.s3]
 [runners.cache.gcs]
 </code></pre>
+<p>*<strong>Replace <code>supersecrettoken</code> with your value</strong></p>
 
                     </main>
 

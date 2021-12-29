@@ -359,7 +359,7 @@ services:
     volumes:
       - &quot;./data:/var/lib/redis&quot;
 </code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h2 id="gitlab-runner"><a class="header" href="#gitlab-runner">Gitlab Runner</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="gitlab-runner-installation"><a class="header" href="#gitlab-runner-installation">Gitlab Runner <a href="https://docs.gitlab.com/runner/install/">Installation</a></a></h2>
 <h4 id="docker-composeyml"><a class="header" href="#docker-composeyml">docker-compose.yml</a></h4>
 <pre><code class="language-yaml">version: &quot;3.3&quot;
 
@@ -388,6 +388,7 @@ volumes = [&quot;/certs/client&quot;, &quot;/cache&quot;]
 [runners.cache.s3]
 [runners.cache.gcs]
 </code></pre>
+<p>*<strong>Replace <code>supersecrettoken</code> with your value</strong></p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="drone-ci-gitlab-install"><a class="header" href="#drone-ci-gitlab-install">Drone CI <a href="https://docs.drone.io/server/provider/gitlab/"><strong>Gitlab Install</strong></a></a></h2>
 <pre><code class="language-yaml">version: &quot;3.3&quot;
 
@@ -412,14 +413,15 @@ services:
     image: drone/drone-runner-docker
     restart: always
     environment:
-      DRONE_RUNNER_NAME: &quot;Runner Name&quot;
+      DRONE_RUNNER_NAME: &quot;drone_runner_name&quot;
       DRONE_RUNNER_CAPACITY: &quot;10&quot;
       DRONE_RPC_SECRET: &quot;drone_rpc_secret&quot;
-      DRONE_RPC_HOST: &quot;drone.acits.ru&quot;
+      DRONE_RPC_HOST: &quot;drone.example.com&quot;
       DRONE_RPC_PROTO: &quot;https&quot;
     volumes:
       - &quot;/var/run/docker.sock:/var/run/docker.sock&quot;
 </code></pre>
+<p>*<strong>Replace <code>drone_*</code>, <code>gitlab_*</code> and <code>drone.example.com</code> with your values</strong></p>
 
                     </main>
 

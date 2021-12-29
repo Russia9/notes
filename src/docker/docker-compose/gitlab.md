@@ -1,4 +1,4 @@
-## Gitlab Runner
+## Gitlab Runner [Install](https://docs.gitlab.com/runner/install/)
 
 #### docker-compose.yml
 
@@ -33,3 +33,4 @@ volumes = ["/certs/client", "/cache"]
 [runners.cache.s3]
 [runners.cache.gcs]
 ```
+***Replace `supersecrettoken` with your value**

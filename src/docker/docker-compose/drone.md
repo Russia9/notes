@@ -24,11 +24,13 @@ services:
     image: drone/drone-runner-docker
     restart: always
     environment:
-      DRONE_RUNNER_NAME: "Runner Name"
+      DRONE_RUNNER_NAME: "drone_runner_name"
       DRONE_RUNNER_CAPACITY: "10"
       DRONE_RPC_SECRET: "drone_rpc_secret"
-      DRONE_RPC_HOST: "drone.acits.ru"
+      DRONE_RPC_HOST: "drone.example.com"
       DRONE_RPC_PROTO: "https"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
 ```
+
+***Replace `drone_*`, `gitlab_*` and `drone.example.com` with your values**

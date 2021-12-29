@@ -4,6 +4,7 @@ language = "en"
 multilingual = false
 src = "src"
 title = "DevOps Notes"
+description = "A simple DevOps cheat sheet for yourself"
 
 [output.html]
 git-repository-url = "https://github.com/Russia9/notes"

@@ -1,4 +1,4 @@
-## Gitlab Runner [Install](https://docs.gitlab.com/runner/install/)
+## Gitlab Runner [Installation](https://docs.gitlab.com/runner/install/)
 
 #### docker-compose.yml
 

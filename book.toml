@@ -8,4 +8,4 @@ description = "A simple DevOps cheat sheet for yourself"
 
 [output.html]
 git-repository-url = "https://github.com/Russia9/notes"
-edit-url-template = "https://github.com/Russia9/notes/{path}"
+edit-url-template = "https://github.com/Russia9/edit/notes/{path}"

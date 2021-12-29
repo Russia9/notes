@@ -1,7 +1,7 @@
 name: Deploy to Github Pages
 on: [push]
 jobs:
-  build-and-deploy:
+  pages:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -16,4 +16,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.7
         with:
           branch: gh-pages
-          folder: build
+          folder: book

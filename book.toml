@@ -1,6 +1,10 @@
 [book]
 authors = ["Russia9"]
-language = "ru"
+language = "en"
 multilingual = false
 src = "src"
-title = "Russia9 Notes"
+title = "DevOps Notes"
+
+[output.html]
+git-repository-url = "https://github.com/Russia9/notes"
+edit-url-template = "https://github.com/Russia9/notes/{path}"

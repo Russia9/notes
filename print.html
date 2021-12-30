@@ -426,7 +426,6 @@ services:
 <p>GitlabCI-related notes section</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="build-docker-image"><a class="header" href="#build-docker-image">Build Docker image</a></h1>
 <pre><code class="language-yaml">stages:
-# ...
   - build
 
 services:
@@ -454,6 +453,7 @@ build:
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="run-ssh-command"><a class="header" href="#run-ssh-command">Run SSH command</a></h1>
 <pre><code class="language-yaml">stages:
+  # ...
   - deploy
 
 deploy:
@@ -570,6 +570,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # ...
+      
       - name: ssh-pipeline
         uses: cross-the-world/ssh-pipeline@v1.2.0
         with:

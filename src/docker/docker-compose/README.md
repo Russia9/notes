@@ -1,3 +1,3 @@
 # Docker-compose
 
-Compose files for different technologies
+Examples of compose files for several technologies

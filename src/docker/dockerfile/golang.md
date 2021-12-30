@@ -29,7 +29,7 @@ COPY --from=build /app/app .
 CMD ["./app"]
 ```
 
-## Normal Dockerfile
+## Common Dockerfile
 
 ```dockerfile
 FROM golang:1.17

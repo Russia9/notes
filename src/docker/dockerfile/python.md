@@ -1,6 +1,6 @@
 # Python
 
-## Normal Dockerfile
+## Common Dockerfile
 
 ```dockerfile
 FROM python:3.9

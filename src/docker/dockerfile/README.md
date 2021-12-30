@@ -1,3 +1,3 @@
 # Dockerfile
 
-Dockerfiles for different technologies
+Dockerfiles for several technologies

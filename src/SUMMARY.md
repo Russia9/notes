@@ -12,4 +12,11 @@
         - [Redis](docker/docker-compose/redis.md)
         - [Gitlab Runner](docker/docker-compose/gitlab.md)
         - [Drone CI](docker/docker-compose/drone.md)
+- [GitLab CI](gitlab/README.md)
+  - [Build Docker Image](gitlab/docker.md)
+  - [Run SSH command](gitlab/ssh.md)
+  - [Deploy to K8s via Helm](gitlab/helm.md)
+- [Bitbucket](bitbucket/README.md)
+    - [Run SSH command](bitbucket/ssh.md)
+  
         

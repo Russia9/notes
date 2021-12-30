@@ -50,7 +50,7 @@ server {
 }
 ```
 
-## SSR (NextJS)
+## Common Dockerfile
 
 ```dockerfile
 FROM node:17.3.0-alpine3.14

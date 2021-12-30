@@ -2,7 +2,6 @@
 
 ```yaml
 stages:
-# ...
   - build
 
 services:

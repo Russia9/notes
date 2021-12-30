@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # ...
+      
       - name: ssh-pipeline
         uses: cross-the-world/ssh-pipeline@v1.2.0
         with:

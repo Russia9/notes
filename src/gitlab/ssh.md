@@ -2,6 +2,7 @@
 
 ```yaml
 stages:
+  # ...
   - deploy
 
 deploy:

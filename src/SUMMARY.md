@@ -18,5 +18,10 @@
   - [Deploy to K8s via Helm](gitlab/helm.md)
 - [Bitbucket](bitbucket/README.md)
     - [Run SSH command](bitbucket/ssh.md)
+- [GitHub Actions](github/README.md)
+    - [Build Docker Image](github/docker.md)
+    - [Run SSH command](github/ssh.md)
+    - [Deploy to Pages](github/pages.md)
+
   
         

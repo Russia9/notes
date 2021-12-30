@@ -19,4 +19,4 @@ pipelines:
 
 ### `SSH_USER`
 
-SSH Key in `Repo Settings/Pipelines/SSH keys`
+**Copy SSH pubkey to server (`Repo Settings/Pipelines/SSH keys`)**

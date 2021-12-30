@@ -1,6 +1,9 @@
-name: Deploy to Github Pages
+# Deploy to GitHub Pages
 
-on: [push]
+```yaml
+name: Github Pages
+
+on: [ push ]
 
 jobs:
   pages:
@@ -11,11 +14,12 @@ jobs:
 
       - name: Build HTML
         run: |
-          curl -L https://github.com/rust-lang/mdBook/releases/download/v0.4.14/mdbook-v0.4.14-x86_64-unknown-linux-gnu.tar.gz | tar -xz
-          ./mdbook build
+          npm ci
+          npm build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.7
         with:
           branch: gh-pages
-          folder: book
+          folder: build
+```

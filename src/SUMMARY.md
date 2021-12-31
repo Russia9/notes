@@ -22,6 +22,7 @@
     - [Build Docker Image](github/docker.md)
     - [Run SSH command](github/ssh.md)
     - [Deploy to Pages](github/pages.md)
-
+- [Miscellaneous](miscellaneous/README.md)
+  - [Bitrix admin without password](miscellaneous/bitrix-password.md)
   
         

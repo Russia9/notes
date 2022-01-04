@@ -266,10 +266,10 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /usr/src/app
 
 # Copy dependencies list
-COPY ./requirements requirements
+COPY ./requirements.txt .
 
 # Install dependencies
-RUN pip install --no-cache-dir -r requirements/base.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy app sources
 COPY . .

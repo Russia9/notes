@@ -4,20 +4,20 @@
 
 ```dockerfile
 # Build container
-FROM golang:1.17-alpine3.15 AS build
+FROM golang:1.17-bullseye AS build
 
 # Set build workdir
 WORKDIR /app
 
 # Copy app sources
-COPY .. .
+COPY . .
 
 # Build app
 RUN go build -o app .
 
 # ---
 # Production container
-FROM alpine:3.15
+FROM debian:bullseye-slim
 
 # Set app workdir
 WORKDIR /app

@@ -194,7 +194,7 @@ CMD [&quot;./app&quot;]
 <h2 id="static-site-webpack"><a class="header" href="#static-site-webpack">Static Site (Webpack)</a></h2>
 <h3 id="dockerfile-1"><a class="header" href="#dockerfile-1">Dockerfile</a></h3>
 <pre><code class="language-dockerfile"># Build container
-FROM node:17.3.0-alpine3.14 AS build
+FROM node:17.3.0-bullseye-slim AS build
 
 # Set build workdir
 WORKDIR /usr/src/app
@@ -235,7 +235,7 @@ COPY --from=build /usr/src/app/build/ /usr/share/nginx/html/
 }
 </code></pre>
 <h2 id="common-dockerfile-1"><a class="header" href="#common-dockerfile-1">Common Dockerfile</a></h2>
-<pre><code class="language-dockerfile">FROM node:17.3.0-alpine3.14
+<pre><code class="language-dockerfile">FROM node:17.3.0-bullseye-slim
 
 # Set app workdir
 WORKDIR /usr/src/app

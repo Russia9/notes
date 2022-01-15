@@ -620,7 +620,7 @@ jobs:
 require($_SERVER[&quot;DOCUMENT_ROOT&quot;].&quot;/bitrix/modules/main/include/prolog_before.php&quot;);
 global $USER;
 $USER-&gt;Authorize(1);
-@unlink(__FILE__); 
+@unlink(__FILE__); // Delete file
 LocalRedirect(&quot;/bitrix/admin/&quot;);
 </code></pre>
 

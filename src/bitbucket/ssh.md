@@ -8,6 +8,8 @@ pipelines:
     master:
       - step:
           deployment: production
+          clone:
+            enabled: false
           script:
             - echo "command1" | ssh $SSH_USER@$SSH_HOST
             - echo "command2" | ssh $SSH_USER@$SSH_HOST

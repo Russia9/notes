@@ -141,27 +141,26 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="run-ssh-command"><a class="header" href="#run-ssh-command">Run SSH command</a></h1>
-<pre><code class="language-yaml">name: Docker
+<pre><code class="language-yaml">name: Deploy
 
-on: [ push ]
+on: [push]
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
       # ...
-      
+
       - name: ssh-pipeline
-        uses: cross-the-world/ssh-pipeline@v1.2.0
+        uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SSH_HOST }}
           port: ${{ secrets.SSH_PORT }}
-          user: ${{ secrets.SSH_USER }}
+          username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            command1
-            command2
+            someSshCommand
 </code></pre>
 <h2 id="secrets"><a class="header" href="#secrets">Secrets</a></h2>
 <ul>

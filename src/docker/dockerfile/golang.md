@@ -4,7 +4,7 @@
 
 ```dockerfile
 # Build container
-FROM golang:1.17-bullseye AS build
+FROM golang:1.22-bullseye AS build
 
 # Set build workdir
 WORKDIR /app
@@ -32,7 +32,7 @@ CMD ["./app"]
 ## Common Dockerfile
 
 ```dockerfile
-FROM golang:1.17
+FROM golang:1.22
 
 # Set app workdir
 WORKDIR /go/src/app

@@ -6,7 +6,7 @@
 
 ```dockerfile
 # Build container
-FROM node:17.3.0-bullseye-slim AS build
+FROM node:21.7.1-bullseye-slim AS build
 
 # Set build workdir
 WORKDIR /usr/src/app
@@ -28,7 +28,7 @@ RUN npm run build
 
 # ---
 # Production container
-FROM nginx:1.21.5-alpine
+FROM nginx:1.25.4-alpine
 
 # Copy nginx.conf
 COPY --from=build /usr/src/app/nginx.conf /etc/nginx/conf.d/default.conf
@@ -40,7 +40,7 @@ COPY --from=build /usr/src/app/build/ /usr/share/nginx/html/
 ### nginx.conf
 
 ```nginx configuration
-server { 
+server {
     listen 80;
     server_name _ default_server;
     location / {
@@ -53,7 +53,7 @@ server {
 ## Common Dockerfile
 
 ```dockerfile
-FROM node:17.3.0-bullseye-slim
+FROM node:21.7.1-bullseye-slim
 
 # Set app workdir
 WORKDIR /usr/src/app

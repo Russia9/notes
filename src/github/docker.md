@@ -3,7 +3,7 @@
 ```yaml
 name: Docker
 
-on: [ push ]
+on: [push]
 
 env:
   REGISTRY: ghcr.io

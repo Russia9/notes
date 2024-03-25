@@ -3,7 +3,7 @@
 ```yaml
 name: Github Pages
 
-on: [ push ]
+on: [push]
 
 jobs:
   pages:

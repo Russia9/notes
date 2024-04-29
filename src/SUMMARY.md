@@ -13,9 +13,9 @@
         - [Gitlab Runner](docker/docker-compose/gitlab.md)
         - [Drone CI](docker/docker-compose/drone.md)
 - [GitLab CI](gitlab/README.md)
-  - [Build Docker Image](gitlab/docker.md)
-  - [Run SSH command](gitlab/ssh.md)
-  - [Deploy to K8s via Helm](gitlab/helm.md)
+    - [Build Docker Image](gitlab/docker.md)
+    - [Run SSH command](gitlab/ssh.md)
+    - [Deploy to K8s via Helm](gitlab/helm.md)
 - [Drone CI](drone/README.md)
     - [Build Docker Image](drone/docker.md)
     - [Run SSH command](drone/ssh.md)
@@ -27,6 +27,6 @@
     - [Run SSH command](github/ssh.md)
     - [Deploy to Pages](github/pages.md)
 - [Miscellaneous](miscellaneous/README.md)
-  - [Bitrix admin without password](miscellaneous/bitrix-password.md)
+    - [Bitrix admin without password](miscellaneous/bitrix-password.md)
   
         

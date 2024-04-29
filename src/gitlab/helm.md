@@ -21,7 +21,9 @@ deploy:
 ## CI Variables
 
 ### `KUBERNETES_CONFIG`
+
 Type: `File`
 
 ### `KUBERNETES_NAMESPACE`
+
 Type: `Variable`

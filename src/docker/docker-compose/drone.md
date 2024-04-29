@@ -1,8 +1,6 @@
 ## Drone CI [**Installation (Gitlab)**](https://docs.drone.io/server/provider/gitlab/)
 
 ```yaml
-version: "3.3"
-
 services:
   drone:
     image: drone/drone

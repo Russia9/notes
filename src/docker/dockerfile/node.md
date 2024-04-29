@@ -6,7 +6,7 @@
 
 ```dockerfile
 # Build container
-FROM node:21.7.1-bullseye-slim AS build
+FROM node:21.7.3-bullseye-slim AS build
 
 # Set build workdir
 WORKDIR /usr/src/app
@@ -53,7 +53,7 @@ server {
 ## Common Dockerfile
 
 ```dockerfile
-FROM node:21.7.1-bullseye-slim
+FROM node:21.7.3-bullseye-slim
 
 # Set app workdir
 WORKDIR /usr/src/app

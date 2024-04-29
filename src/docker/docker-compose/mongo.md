@@ -1,8 +1,6 @@
 # MongoDB
 
 ```yaml
-version: "3.3"
-
 services:
   mongo:
     image: mongo:4.4
@@ -14,7 +12,10 @@ services:
     ports:
       - "127.0.0.1:27017:27017"
     volumes:
-      - "./data:/data/db"
+      - "mongo_data:/data/db"
+
+volumes:
+  mongo_data:
 ```
 
 ***Replace `dbname` and `superpassword` with your values**

@@ -3,8 +3,6 @@
 #### docker-compose.yml
 
 ```yaml
-version: "3.3"
-
 services:
   runner:
     image: gitlab/gitlab-runner

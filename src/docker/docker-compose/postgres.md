@@ -1,8 +1,6 @@
 # PostgreSQL
 
 ```yaml
-version: "3.3"
-
 services:
   postgres:
     image: postgres:13.3
@@ -13,7 +11,11 @@ services:
     ports:
       - "127.0.0.1:5432:5432"
     volumes:
-      - "./data:/var/lib/postgresql/data"
+      - "postgres_data:/var/lib/postgresql/data"
+
+volumes:
+  postgres_data:
+
 ```
 
 ***Replace `dbname` and `superpassword` with your values**

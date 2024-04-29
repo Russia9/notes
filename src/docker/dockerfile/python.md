@@ -3,7 +3,7 @@
 ## Common Dockerfile
 
 ```dockerfile
-FROM python:3.13
+FROM python:3.12
 
 # Stdout without buffer
 ENV PYTHONUNBUFFERED=1

@@ -182,7 +182,7 @@
                         <h1 id="mongodb"><a class="header" href="#mongodb">MongoDB</a></h1>
 <pre><code class="language-yaml">services:
   mongo:
-    image: mongo:4.4
+    image: mongo:7.0.9
     restart: always
     environment:
       MONGO_INITDB_DATABASE: "dbname"
@@ -196,7 +196,8 @@
 volumes:
   mongo_data:
 </code></pre>
-<p>*<strong>Replace <code>dbname</code> and <code>superpassword</code> with your values</strong></p>
+<p>*<strong>Use <code>mongo:4.4</code> image if your system does not support AVX instructions</strong> <br>
+**<strong>Replace <code>dbname</code> and <code>superpassword</code> with your values</strong></p>
 
                     </main>
 

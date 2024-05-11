@@ -3,7 +3,7 @@
 ```yaml
 services:
   mongo:
-    image: mongo:4.4
+    image: mongo:7.0.9
     restart: always
     environment:
       MONGO_INITDB_DATABASE: "dbname"
@@ -18,4 +18,5 @@ volumes:
   mongo_data:
 ```
 
-***Replace `dbname` and `superpassword` with your values**
+***Use `mongo:4.4` image if your system does not support AVX instructions** <br>
+****Replace `dbname` and `superpassword` with your values**
